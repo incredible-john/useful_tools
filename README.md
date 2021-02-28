@@ -8,10 +8,10 @@ ls -R  /dir/*.ipg > file.txt
 
 2.Darknet Convertion
 
-# convert darknet cfg/weights to pytorch model
+convert darknet cfg/weights to pytorch model
 $ python3  -c "from models import *; convert('cfg/yolov3-spp.cfg', 'weights/yolov3-spp.weights')"
 Success: converted 'weights/yolov3-spp.weights' to 'weights/yolov3-spp.pt'
 
-# convert cfg/pytorch model to darknet weights
+convert cfg/pytorch model to darknet weights
 $ python3  -c "from models import *; convert('cfg/yolov3-spp.cfg', 'weights/yolov3-spp.pt')"
 Success: converted 'weights/yolov3-spp.pt' to 'weights/yolov3-spp.weights'
